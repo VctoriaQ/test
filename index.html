@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My portfolio</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav style="height: fit-content;">
+            <div class="logo">
+                <h2>√.Q</h2>
+            </div>
+            <ul id="nav-content" class="nav-menu-content" hidden>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+            <button class="nav-menu-button" onclick="handleNavBar()">
+                <div></div>
+                <div></div>
+                <div></div>                
+            </button>
+        </nav>
+        <main class="main-index">
+            <div class="front-img">
+            
+                    <h1>Victoria Quainoo</h1>
+                    <p>Frond End develepor</p>
+                   
+                    <a  href="#projekts" class="mywork"> 
+                        <div class="projekt-b" >My work</div>
+                    </a>
+        
+
+            </div>
+            <div class="projekts-area" >
+                <h1 id="projekts"> Projekts</h1>
+                    <div class="flex-container">
+                        <div>
+                            <img class="projekt-bild" src="img/my-work3.jpg" alt="">
+                            <div class="middle">
+                                <a class="bild-text" href="projekt1.html">
+                                    <h4 >Projekt 1</h4>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div ><img class="projekt-bild" src="img/photo-1488730792340-bdc88feffb98.jpg" alt="">
+                                <div class="middle">
+                                    <a class="bild-text" href="projekt2.html">
+                                        <h4 >Projekt 2</h4>
+                                    </a>
+                                </div>
+                        </div>
+                        
+                        <div ><img class="projekt-bild" src="img/Coffee-Macarons.jpg" alt="">
+                                <div class="middle">
+                                    <a class="bild-text" href="projekt3.html">
+                                        <h4 >Projekt 3</h4>
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-container">
+                        <div class="single-img"><img class="projekt-bild" src="img/work.jpg" alt="">
+                                <div class="middle">
+                                    <a class="bild-text" href="https://">
+                                        <h4 >Projekt 4</h4>
+                                    </a>
+                                </div>
+                        </div>
+
+                        <div class="single-img"><img class="projekt-bild" src="img/waterfall.jpg" alt="">
+                                <div class="middle">
+                                    <a class="bild-text" href="https://">
+                                        <h4 >Projekt 5</h4>
+                                    </a>
+                                </div>
+                        </div>
+
+                        <div class="single-img"><img class="projekt-bild" src="img/korsberg.jpg" alt="">
+                                <div class="middle">
+                                    <a class="bild-text" href="https://">
+                                        <h4 >Projekt 6</h4>
+                                    </a>
+                                </div>            
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<footer>
+    <h2>Ⓒ 2021 Copyright by Victoria Quainoo </h2>
+</footer>
+</html>
+
+<script>
+    function handleNavBar(){
+        if(document.getElementById("nav-content").hasAttribute("hidden")){
+            expandNavBar();
+        }
+        else{
+            closeNavBar();
+        }
+    }
+    function expandNavBar(){
+        document.getElementById("nav-content").removeAttribute("hidden");
+    }
+    function closeNavBar(){
+        document.getElementById("nav-content").setAttribute("hidden","");
+    }    
+</script>

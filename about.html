@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My portfolio</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav style="height: fit-content;">
+            <div class="logo">
+                <h2>√.Q</h2>
+            </div>
+            <ul id="nav-content" class="nav-menu-content" hidden>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+            <button class="nav-menu-button" onclick="handleNavBar()">
+                <div></div>
+                <div></div>
+                <div></div>                
+            </button>
+        </nav>
+        <main>
+            <div class="section-about">
+                <div class="text-about">
+                <h1 class="title">About Me</h1>
+                <h2>Victoria Quainoo</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Deserunt in omnis reiciendis perspiciatis aperiam, 
+                    delectus beatae reprehenderit expedita quia non? 
+                    Omnis deleniti velit aliquam facilis modi autem 
+                    fuga numquam. Nulla ratione vero possimus quae, 
+                    quia eveniet ipsum incidunt. In mollitia ipsa, 
+                    fugiat necessitatibus repudiandae error voluptas 
+                    molestias ratione facilis accusantium placeat vero 
+                    quae odit obcaecati? Explicabo fugit dolorem 
+                    consequuntur doloremque placeat amet ipsa ab! 
+                    Dicta possimus velit quo porro repellendus. </p>
+                    <button onclick="öppnaLänk('contact.html')">Contact Me</button>
+               </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+<footer>
+    <h2>Ⓒ 2021 Copyright by Victoria Quainoo </h2>
+</footer>
+</html>
+
+<script type="text/javascript">
+    function handleNavBar(){
+        if(document.getElementById("nav-content").hasAttribute("hidden")){
+            expandNavBar();
+        }
+        else{
+            closeNavBar();
+        }
+    }
+    function expandNavBar(){
+        document.getElementById("nav-content").removeAttribute("hidden");
+    }
+    function closeNavBar(){
+        document.getElementById("nav-content").setAttribute("hidden","");
+    }
+
+    function öppnaLänk(url){
+        window.location.href=url;
+    }
+</script>

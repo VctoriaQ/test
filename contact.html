@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My portfolio</title>
+</head>
+<body class="">
+    <div class="wrapper">
+        <nav style="height: fit-content;">
+            <div class="logo">
+                <h2>√.Q</h2>
+            </div>
+            <ul id="nav-content" class="nav-menu-content" hidden>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+            <button class="nav-menu-button" onclick="handleNavBar()">
+                <div></div>
+                <div></div>
+                <div></div>                
+            </button>
+        </nav>
+        <main>
+           <div class="contact-section">
+                <h1>Contact me</h1>
+            <div class="border">
+            <form class="contact-form" action="contact.html" method="get">
+                <input type="text" name="name" class="contact-form-text" placeholder="Your Name">
+                <input type="email" name="email" class="contact-form-text" placeholder="Your email">
+                <input type="text" name="tel" class="contact-form-text" placeholder="Your Phone number">
+                <textarea class="contact-form-text" name="message" placeholder="Your massage"></textarea>
+                <button type="submit">Send</button>
+            </form>
+            </div>
+           </div>
+
+        </main>
+    </div>
+</body>
+<footer>
+    <h2>Ⓒ 2021 Copyright by Victoria Quainoo </h2>
+</footer>
+</html>
+<script>
+    function handleNavBar(){
+        if(document.getElementById("nav-content").hasAttribute("hidden")){
+            expandNavBar();
+        }
+        else{
+            closeNavBar();
+        }
+    }
+    function expandNavBar(){
+        document.getElementById("nav-content").removeAttribute("hidden");
+    }
+    function closeNavBar(){
+        document.getElementById("nav-content").setAttribute("hidden","");
+    }    
+</script>

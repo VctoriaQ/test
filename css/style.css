@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    
+   
+
+}
+html,body{
+    height: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #DFE7F2;
+     scroll-behavior: smooth;
+}
+
+/* Front page */
+
+.wrapper{
+    display: grid;
+    min-height: 100%;
+    grid-template-columns: auto ;
+
+}
+
+nav{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: #000a1f;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+    
+
+}
+nav a{
+    padding: 1rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav a:hover{
+    color:#000a1f ;
+    background-color:rgb(228, 228, 228);
+}
+
+.logo{
+    padding: 1rem;
+    text-decoration: none;
+    color: beige;
+    justify-content: flex-start;
+} 
+
+
+main{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.main-index
+
+.front-img{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/mountin.jpg");
+    background-color: rgb(0, 0, 0);
+    background-size: 100%;
+    min-height: 700px;
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    vertical-align: center;
+    color: whitesmoke;
+    text-align: center;
+}
+.front-img h1{
+    font-size: 50px;
+}
+
+.mywork{
+    text-decoration: none;
+    color:whitesmoke;
+}
+.projekt-b{
+    background: none;
+    border: 0.5px solid;
+    padding: 15px 32px;
+    
+    color: rgb(228, 228, 228);
+    border-radius: 6px;
+}
+
+.flex-container {
+    display: flex;
+    direction: row;
+    justify-content: center;
+    position: relative;
+    flex-wrap: nowrap;
+    background-color: transparent;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 35px;
+    position: relative;
+    font-size: 30px;
+  }
+
+  .flex-container > div:hover .projekt-bild {
+    opacity: 0.3;
+}
+
+  .flex-container > div:hover .middle {
+      cursor: pointer;
+      opacity: 1;
+  }
+
+  .middle > h4{
+      background-color: pink;
+  }
+
+  .middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .bild-text > h4{
+      padding: 10px;
+      font-size: 20px;
+      background-color: pink;
+  }
+
+  .bild-text{
+      text-decoration: none;
+      color: #011640;
+  }
+
+
+
+
+footer{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color: #000a1f;
+    color:white;
+    padding: 20px;
+}
+
+.projekts-area{
+    padding-top: 100px;
+    padding-bottom: 200px;
+    align-items: baseline;
+    margin: auto;
+    overflow: auto;
+}
+
+.projekts-area h1{
+    text-align: center;
+    padding-bottom: 100px;
+    font-size: 50px;
+}
+
+/* Projekts page  */
+
+.section-pj{
+    width: 100%;
+}
+.section-pj, .container-pj{
+    width:80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+ .container-pj, .title-pj{
+    width: 100%;
+    text-align: center ;
+    margin-bottom: 50px;
+}
+.container-pj, .title-pj h1{
+    font-size: 35;
+}
+
+.container-pj, .title-pj h1::after{
+    content: "";
+    /* height: 5px;
+    width: 100px; */
+    display: block;
+    margin: auto;
+}
+
+.content-pj{
+    float: left;
+    width: 55%;
+
+}
+
+.img-pj{
+    float: right;
+    width: 40%;
+    
+}
+
+.img-pj img{
+    width: 100%;
+    height: auto;
+    
+} 
+
+.content-pj, .article-pj h3{
+    font-size: 17px;
+}
+
+.content-pj, .article-pj p{
+    margin-top: 20px;
+    font-size: 16px;
+   
+}
+
+/* The contact page */
+
+.contact-section h1{
+    text-align: center  ;
+    color: #000a1f ;
+    
+}
+
+.contact-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.border{
+    display:flex;
+    justify-content: center;
+}
+
+input, textarea{
+    font-size: 20px;
+    color: #DFE7F2;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border-radius: 40px;
+    border: 0;
+    background-image: linear-gradient(to right, #0A3459, hotpink);
+    padding: 20px 40px;
+}
+
+input::placeholder,textarea::placeholder{
+    color: #DFE7F2;
+}
+
+
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+
+
+/* about me page */
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: grey;
+}
+
+
+
+.title{
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+button {
+    margin-top: 20px;
+    border-radius: 40px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #DFE7F2;
+    background-color:  #021F59;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hotpink;
+    color: #DFE7F2;
+}
+
+.nav-menu-button div{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+
+.section-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 80%;
+    align-items: center;
+    margin:  0 auto;
+   
+} 
+
+
+.section-projekt{
+    display: block;
+}
+
+/*  Desktop Mode */
+@media all and (min-width: 1200px){
+    p{
+        font-size: 30px;
+    }
+    .text-about{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding-right: 20px;
+    }
+    .section-about::after{
+        content: '';
+        background-image:url(../img/about-me.jpg);
+        display: block;
+        height: 600px;
+        width: 500px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border: 0.5rem solid #021F59;
+        border-radius: 10px;
+    }
+    .nav-menu-content{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-menu-button{
+        display: none;
+    }
+}
+
+/* Mobile mode */
+@media all and (max-width: 1200px) {
+    p{
+        font-size: 20px;
+    }
+    .section-about{
+        display: flex;
+        flex-direction: column;
+    }    
+    .text-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-about::before{
+        content: '';
+        background-image:url(../img/about-me.jpg);
+        display: block;
+        height: 400px;
+        width: 300px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border: 0.5rem solid #021F59;
+        border-radius: 10px;
+    }
+    .title{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .nav-menu-button{
+        display: block;
+    }
+    .nav-menu-content{
+        /* display: flex; */
+        direction: column;
+        width: 40px;
+        font-size: 15px;
+        padding: 40px;
+        line-height: 2;
+        justify-content: space-around;
+    }
+    .flex-container, .flex-container div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .projekt-bild{
+        background-size: 100%;
+        height: 500px;
+    }
+    button {
+        background-color: hotpink;
+    }
+}
+
+@media (max-width: 1512px) {
+    button{
+        margin-bottom: 40px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .section-pj, .container-pj{
+        width: 80%;
+        display:block;
+        margin: auto;
+    }
+    .content-pj{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto
+    }
+    .img-pj{
+        float: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .img-pj, img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+}

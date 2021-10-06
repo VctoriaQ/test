@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My portfolio</title>
+</head>
+<body class="">
+    <div class="wrapper">
+        <nav style="height: fit-content;">
+            <div class="logo">
+                <h2>√.Q</h2>
+            </div>
+            <ul id="nav-content" class="nav-menu-content" hidden>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+            <button class="nav-menu-button" onclick="handleNavBar()">
+                <div></div>
+                <div></div>
+                <div></div>                
+            </button>
+        </nav>
+        <main>
+            <div class="section-pj">
+                <div class="container-pj">
+                    <div class="title-pj">
+                        <h1>Projekt</h1>
+                    </div>
+                       <div class="content-pj">
+                           <div class="article-pj">
+                               <h3>
+                                   Detta projektet var ett av mina fösta projekt som gick ut på att skapa en profil om sig själv och vad som inspererar sig. aut veniam.</h3>
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero magnam error molestias minima id sunt. Iusto at ipsa ratione ducimus. Velit aliquid sunt suscipit tempora tempore quia officiis adipisci. In quisquam accusamus, praesentium rerum animi illum molestias non sint numquam, odio dolorem quis delectus consequatur ex ipsa incidunt modi ipsam unde! Quam optio quae dolores delectus sed nobis provident esse expedita. Molestias eius, nemo nam vitae dicta, est adipisci rerum ad exercitationem natus, quo inventore nobis minus totam quae sequi non voluptatem! Tempore reiciendis sequi doloribus cupiditate dolores, a voluptas labore magni dolorem dolorum recusandae, expedita distinctio laborum pariatur fugiat id totam reprehenderit culpa! Error quibusdam ipsa blanditiis, sapiente, harum, modi odio nam illo aliquam ut consequuntur sit eos minus. Recusandae aliquid, sequi architecto amet distinctio eaque ullam nesciunt alias velit perferendis nostrum itaque unde dolorem quam maiores sed ipsa inventore, praesentium dolores atque, excepturi magnam earum voluptas. Sed, numquam!</p>                       
+                           </div>
+                       </div> 
+                       <div class="img-pj">
+                            <img src="img/Skärmbild 1.jpg" alt="">
+                       </div>
+                </div>
+            </div>
+    </div>
+</body>
+<footer>
+    <h2>Ⓒ 2021 Copyright by Victoria Quainoo </h2>
+</footer>
+</html>
+<script>
+    function handleNavBar(){
+        if(document.getElementById("nav-content").hasAttribute("hidden")){
+            expandNavBar();
+        }
+        else{
+            closeNavBar();
+        }
+    }
+    function expandNavBar(){
+        document.getElementById("nav-content").removeAttribute("hidden");
+    }
+    function closeNavBar(){
+        document.getElementById("nav-content").setAttribute("hidden","");
+    }    
+</script>
